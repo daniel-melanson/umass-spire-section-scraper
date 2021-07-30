@@ -14,7 +14,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.webdriver import WebDriver
 
 def create_driver() -> WebDriver:
-    if os.environ.get('HEADLESS'):
+    if os.environ.get('headless'):
         opts = Options()
         opts.headless = True
 
